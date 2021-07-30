@@ -8,7 +8,7 @@ current_git_branch() {
 }
 
 parse_git_dirty() {
-  local DIRTY=$(command git status --porcelain | tail -1)
+  local DIRTY=$(command git status -s | tail -1)
   if [[ -n $DIRTY ]]; then
     echo "%{$fg_bold[magenta]%})%{$fg_bold[red]%}✗"
   else
