@@ -7,3 +7,5 @@ setopt PRINT_EIGHT_BIT
 setopt HIST_IGNORE_ALL_DUPS
 # history sharing for multiple instance
 setopt SHARE_HISTORY
+# command substitution and arithmetic expansion are performed in prompts
+setopt PROMPT_SUBST
