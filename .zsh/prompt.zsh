@@ -1,4 +1,4 @@
-if [ "$USERNAME" = "root" ]; then CARETCOLOR="red"; else CARETCOLOR="magenta"; fi
+## git functions
 
 current_git_branch() {
   (git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
@@ -21,7 +21,13 @@ print_git_prompt() {
   fi
 }
 
+## setting propmt
 
+if [ "$USERNAME" = "root" ]; then
+  CARETCOLOR="red";
+else
+  CARETCOLOR="magenta";
+fi
 
 PROMPT="
 %{$fg_bold[cyan]%}%n%{$reset_color%}%{$fg_bold[blue]%}@%m%{$reset_color%}:%{${fg_bold[green]}%}%~%{$reset_color%}
