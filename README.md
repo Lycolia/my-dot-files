@@ -4,7 +4,6 @@
 
 -   download this repository by zip
 -   extract to `~/`
--   edit `.zsh\keybind.zsh` according to the environment
 
 ## Included
 
