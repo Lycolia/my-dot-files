@@ -9,4 +9,4 @@ source $ZSH_HOME/plugin.zsh
 source $ZSH_HOME/history.zsh
 source $ZSH_HOME/alias.zsh
 source $ZSH_HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+source $ZSH_HOME/keybind.zsh
