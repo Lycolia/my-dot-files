@@ -29,7 +29,7 @@ if [ "$USERNAME" = "root" ]; then
 else
   CARETCOLOR="magenta";
 fi
-setopt PROMPT_SUBST
+
 PROMPT="
 %{$fg_bold[cyan]%}%n%{$reset_color%}%{$fg_bold[blue]%}@%m%{$reset_color%}:%{${fg_bold[green]}%}%~%{$reset_color%}
 %(?:%{$fg_bold[green]%}➜:%{$fg_bold[red]%}➜)  %{${reset_color}%}"'$(print_git_prompt)'
