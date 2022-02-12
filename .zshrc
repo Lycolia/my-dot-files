@@ -4,7 +4,13 @@ ZSH_HOME="${HOME}/.zsh"
 
 ## load configs
 source $ZSH_HOME/option.zsh
-source $ZSH_HOME/prompt.zsh
+
+if [[ $OSTYPE = 'msys' ]]; then
+    source $ZSH_HOME/prompt_msys2.zsh
+else
+    source $ZSH_HOME/prompt.zsh
+fi
+
 source $ZSH_HOME/plugin.zsh
 source $ZSH_HOME/history.zsh
 source $ZSH_HOME/alias.zsh
