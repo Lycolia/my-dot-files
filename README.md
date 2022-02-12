@@ -1,5 +1,10 @@
 # Lycolia's zsh configure files
 
+## Enviroments Support
+
+-   MSYS2/zsh
+-   Ubuntu
+
 ## Usage
 
 -   download this repository by zip
