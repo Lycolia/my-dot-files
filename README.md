@@ -7,7 +7,7 @@
 
 ### for MSYS2
 
-Install msys2/git for using prompt and rename so doesn't conflict with Git for Windows
+Install msys2/git for using prompt and rename so will being not conflict with Git for Windows
 
 ```sh
 pacman -S git
