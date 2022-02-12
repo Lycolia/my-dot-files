@@ -1,11 +1,11 @@
 ## git functions
 
 current_git_branch() {
-  (git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
+  (msys2_git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
 }
 
 parse_git_dirty() {
-  local DIRTY=$(git status -s | tail -1)
+  local DIRTY=$(msys2_git status -s | tail -1)
   if [[ -n $DIRTY ]]; then
     echo "%{$fg_bold[magenta]%})%{$fg_bold[red]%}✗"
   else
@@ -14,7 +14,7 @@ parse_git_dirty() {
 }
 
 print_git_prompt() {
-  local FIND_BRANCH=$(git branch 2> /dev/null | tail -1)
+  local FIND_BRANCH=$(msys2_git branch 2> /dev/null | tail -1)
   if [[ -n $FIND_BRANCH ]]; then
     echo "%{$fg_bold[magenta]%}(%{$reset_color%}%{$fg_bold[yellow]%}"$(current_git_branch)$(parse_git_dirty)" %{$reset_color%} "
   else
