@@ -1,7 +1,7 @@
 ## git functions
 
 current_git_branch() {
-  (msys2_git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
+  (msys2_git branch --show-current 2> /dev/null)
 }
 
 parse_git_dirty() {
