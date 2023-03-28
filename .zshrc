@@ -1,6 +1,9 @@
 # config for interactive shell
-
 ZSH_HOME="${HOME}/.zsh"
+
+## for sakura internet
+# export MAILCHECK=0
+# PATH=/home/<user-name>/local/bin:$PATH
 
 ## load configs
 source $ZSH_HOME/option.zsh
