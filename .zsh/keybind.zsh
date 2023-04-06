@@ -12,6 +12,16 @@ if [[ $OSTYPE = 'msys' ]]; then
     bindkey "\e[H" beginning-of-line
     ## End
     bindkey "\e[F" end-of-line
+elif [[ `echo $OSTYPE | grep freebsd` ]]; then
+    # for sakura internet
+    ## arrow up
+    bindkey '^[[A' up-line-or-search
+    ## arrow down
+    bindkey '^[[B' down-line-or-search
+    ## Home
+    bindkey "^[[H" beginning-of-line
+    ## End
+    bindkey "^[[F" end-of-line
 else
     # for Linux
     ## arrow up
@@ -19,7 +29,7 @@ else
     ## arrow down
     bindkey "^[OB" down-line-or-search
     ## Home
-    bindkey "\e[1~" beginning-of-line
+    bindkey "^[OH" beginning-of-line
     ## End
-    bindkey "\e[4~" end-of-line
+    bindkey "^[OF" end-of-line
 fi
