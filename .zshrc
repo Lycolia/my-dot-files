@@ -22,4 +22,4 @@ source $ZSH_HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_HOME/keybind.zsh
 # Required nvm
 #   https://github.com/nvm-sh/nvm#readme
-# source $ZSH_HOME/nvm.zsh
+# source $ZSH_HOME/nvm-integration.zsh
