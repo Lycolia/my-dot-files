@@ -1,4 +1,4 @@
-# Lycolia's zsh configure files
+# Lycolia's dot files
 
 ## Enviroments Support
 
