@@ -1,5 +1,3 @@
-include "/etc/nanorc"
-
 set autoindent
 set titlecolor white,green
 set statuscolor white,green
