@@ -5,7 +5,6 @@ set titlecolor white,green
 set statuscolor white,green
 set keycolor white,green
 set functioncolor white,green
-set linenumbers
 
 bind ^X cut main
 bind ^C copy main
