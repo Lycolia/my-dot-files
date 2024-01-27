@@ -1,8 +1,7 @@
+# for ubuntu, MSYS2
+include "/usr/share/nano/*.nanorc"
+
 set autoindent
-set titlecolor white,green
-set statuscolor white,green
-set keycolor white,green
-set functioncolor white,green
 
 bind ^X cut main
 bind ^C copy main
@@ -17,4 +16,3 @@ bind ^Z undo main
 bind ^Y redo main
 bind F3 findnext all
 bind F4 findprevious all
-
