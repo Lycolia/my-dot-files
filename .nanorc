@@ -1,7 +1,8 @@
-# for ubuntu, MSYS2
-include "/usr/share/nano/*.nanorc"
-
 set autoindent
+set titlecolor white,green
+set statuscolor white,green
+set keycolor white,green
+set functioncolor white,green
 
 bind ^X cut main
 bind ^C copy main
@@ -10,7 +11,9 @@ bind ^Q exit all
 bind ^S savefile main
 bind ^W writeout main
 bind ^F whereis all
-bind ^H replace main
+# ^Hにしたいがバックスペースが死ぬので妥協
+# ^Hはバックスペース操作が起きるのでバインド設定のやり直しが必要そう
+bind ^R replace main
 bind ^G gotoline main
 bind ^Z undo main
 bind ^Y redo main
