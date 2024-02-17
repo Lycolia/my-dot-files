@@ -24,5 +24,3 @@ source $ZSH_HOME/keybind.zsh
 #   https://github.com/nvm-sh/nvm#readme
 # source $ZSH_HOME/nvm-integration.zsh
 
-# Paths
-export PATH=$PATH:$HOME/bin
