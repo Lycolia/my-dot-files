@@ -1,8 +1,4 @@
 set autoindent
-set titlecolor white,green
-set statuscolor white,green
-set keycolor white,green
-set functioncolor white,green
 
 bind ^X cut main
 bind ^C copy main
