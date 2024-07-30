@@ -30,7 +30,7 @@ else
   CARETCOLOR="magenta";
 fi
 
-PROMPT="
+PS1="
 %{$fg_bold[cyan]%}%n%{$reset_color%}%{$fg_bold[blue]%}@%m%{$reset_color%}:%{${fg_bold[green]}%}%~%{$reset_color%}
 %(?:%{$fg_bold[green]%}➜:%{$fg_bold[red]%}➜)  %{${reset_color}%}"'$(print_git_prompt)'
 
